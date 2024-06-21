@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Address Form</h1>
+    </header>
+
+    <div class="form-container">
+        <form id="addressForm">
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="neigborhood">Neighborhood:</label>
+                <input type="text" id="neigborhood" name="neigborhood" required>
+            </div>
+
+            <div class="form-group">
+                <label for="street">Street:</label>
+                <input type="text" id="street" name="street" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number">Number:</label>
+                <input type="text" id="number" name="number" required>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="redirectToAddressList()">Cancel</button>
+                <button type="submit">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

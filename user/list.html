@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <link rel="stylesheet" href="list.css">
+</head>
+<body>
+    <header>
+        <h1>User List</h1>
+        <button onclick="redirectToUserCreation()">Create New User</button>
+    </header>
+
+    <div class="table-container">
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchUsers()" placeholder="Search by name or document...">
+        </div>        
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Document</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Created At</th>
+                    <th>Updated At</th>
+                    <th>Disabled At</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userList">
+                <!-- User list will be populated dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="list.js"></script>
+</body>
+</html>
